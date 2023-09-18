@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import "./App.css";
 //import {Button} from "@chakra-ui/button";
-import HomePage from "./Pages/HomePage";
-import ChatPage from "./Pages/ChatPage";
+//import HomePage from "./Pages/HomePage";
+//import ChatPage from "./Pages/ChatPage";
 import { Routes, Route } from "react-router-dom";
 import ErrorFallback from "./components/ErrorBoundary";
 import { ErrorBoundary } from "react-error-boundary";
