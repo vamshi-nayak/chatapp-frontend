@@ -39,7 +39,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "https://chatapp-api-fetf.onrender.com",
+        "/api/user/login",
         { email, password },
         config
       );
