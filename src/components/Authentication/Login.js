@@ -39,7 +39,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "https://chatapp-api-fetf.onrender.com",
         { email, password },
         config
       );
@@ -55,7 +55,7 @@ const Login = () => {
 
       localStorage.setItem("userInformation", JSON.stringify(data));
       setLoading(false);
-      navigate("/Pages/HomePage");
+      navigate("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
