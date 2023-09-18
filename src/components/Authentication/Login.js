@@ -55,7 +55,7 @@ const Login = () => {
 
       localStorage.setItem("userInformation", JSON.stringify(data));
       setLoading(false);
-      navigate("/HomePage");
+      navigate("/Pages/HomePage");
     } catch (error) {
       toast({
         title: "Error Occured!",
