@@ -104,7 +104,7 @@ const GroupChatModal = ({ children }) => {
       };
       
       const { data } = await axios.post(
-        `https://chatapp-api-fetf.onrender.com`,
+        `/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((selectedUser) => selectedUser._id)), 
