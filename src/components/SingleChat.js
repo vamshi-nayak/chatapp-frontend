@@ -54,7 +54,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `https://chatapp-api-fetf.onrender.com`,
+        `/api/message/${selectedChat._id}`,
         config
       );
 
@@ -94,7 +94,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         setNewMessage("");
 
         const { data } = await axios.post(
-          "https://chatapp-api-fetf.onrender.com",
+          "/api/message",
           {
             content: newMessage,
             chatId: selectedChat,
